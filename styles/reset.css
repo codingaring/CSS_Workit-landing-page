@@ -1,0 +1,26 @@
+/** user stylesheet reset **/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  word-break: keep-all;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
