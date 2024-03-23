@@ -60,19 +60,23 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 5.6rem 16.5rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 3.7rem 3.9rem;
+  }
 }
 
-.apply-button {
-  background-color: rgba(0, 0, 0, 0);
+.apply {
   color: var(--White);
   font-family: "Manrope";
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 3.2rem;
   letter-spacing: -0.018rem;
+  cursor: pointer;
 }
 
-.apply-button:hover {
+.apply:hover {
   color: var(--Eucaplyptus);
 }
 
@@ -91,6 +95,13 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 3.7rem;
+  overflow: hidden;
+  z-index: 1;
+  padding-bottom: 25rem;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 20rem;
+  }
 }
 
 .header button {
@@ -103,17 +114,29 @@ main {
   position: absolute;
   left: -15rem;
   top: -3rem;
+
+  @media screen and (max-width: 768px) {
+    left: -25rem;
+  }
 }
 
 .bg-pattern2 {
   position: absolute;
   right: -6rem;
   bottom: 18rem;
+
+  @media screen and (max-width: 768px) {
+    right: -10rem;
+  }
 }
 
 .hero-title {
   color: var(--White);
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 6rem;
+  }
 }
 
 .highlight {
@@ -128,25 +151,61 @@ main {
 }
 
 .hero-image {
-  margin-bottom: -18rem;
+  position: absolute;
   width: 70.2rem;
+  top: 50%;
+  z-index: 2;
+
+  @media screen and (max-width: 768px) {
+    width: 48rem;
+    top: ;
+  }
 }
 
 /** section 1 **/
 .section-1 {
-  padding: 26rem 16.5rem;
+  background-image: url("");
+  background-position: bottom;
+  background-size: cover;
+  padding: 40rem 16.5rem 20rem 16.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.6rem;
+  margin-top: -10rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 30rem 9.7rem 10rem 9.7rem;
+  }
+}
+
+.section-1:hover {
+  background-image: url("../assets/images/bg-radius2.svg");
 }
 
 .introduction-message {
-  width: 35.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: row;
+    gap: 3.2em;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.8rem;
+
+  @media screen and (max-width: 768px) {
+    gap: 1.6rem;
+    align-items: flex-start;
+  }
 }
 
 .introduction-content {
@@ -161,6 +220,11 @@ main {
   border-radius: 50%;
   border: 0.1rem solid var(--Dark-Purple);
   margin-bottom: 5.6rem;
+
+  @media screen and (max-width: 768px) {
+    min-width: 4.7rem;
+    min-height: 4.7rem;
+  }
 }
 
 .number {
@@ -175,25 +239,42 @@ main {
 }
 
 .introduction-title {
-  margin-bottom: 2.8rem;
+  @media screen and (max-width: 768px) {
+    font-size: 2.8rem;
+  }
 }
 
 .introduction-description {
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+    font-size: 1.6rem;
+  }
 }
 
 /** section 2 **/
 .section-2 {
+  margin-top: 8rem;
   display: flex;
   align-items: center;
-  margin: 0 auto;
   position: relative;
-  padding: 0 16.5rem;
+  padding: 0 3.9rem 0 3.9rem;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    min-width: 4.7rem;
+    min-height: 4.7rem;
+  }
 }
 
 .founder-image {
-  width: 47.7rem;
+  width: 50rem;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    width: 28.1rem;
+  }
 }
 
 .section2-content-box {
@@ -201,20 +282,34 @@ main {
   flex-direction: column;
   gap: 3.2rem;
   align-items: flex-start;
-  width: 73rem;
   background-color: var(--Dark-Purple);
   padding: 6.4rem;
   position: relative;
   top: 15rem;
-  left: -9rem;
+  left: -4rem;
+
+  @media screen and (max-width: 768px) {
+    width: 58rem;
+    position: absolute;
+    gap: 2.4rem;
+    padding: 5.6rem;
+    left: 15rem;
+    top: 16rem;
+  }
 }
 
 .section2-content-title {
   color: var(--White);
+  @media screen and (max-width: 768px) {
+    font-size: 4.8rem;
+  }
 }
 
 .section2-content-description {
   color: var(--White);
+  @media screen and (max-width: 768px) {
+    font-size: 1.6rem;
+  }
 }
 
 .apply-button {
@@ -227,6 +322,11 @@ main {
   position: absolute;
   bottom: -6rem;
   right: 8rem;
+
+  @media screen and (max-width: 768px) {
+    right: 3rem;
+    bottom: -8rem;
+  }
 }
 
 /** footer **/
@@ -237,6 +337,10 @@ footer {
   align-items: center;
   gap: 5.8rem;
   margin: 25rem 0 11rem 0;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 35rem;
+  }
 }
 
 .sns-icons {
@@ -250,6 +354,11 @@ footer {
   background-repeat: no-repeat;
   width: 2rem;
   height: 2rem;
+  opacity: 0.7;
+}
+
+.facebook-icon:hover {
+  opacity: 1;
 }
 
 .twitter-icon {
@@ -257,6 +366,11 @@ footer {
   background-repeat: no-repeat;
   width: 2rem;
   height: 2rem;
+  opacity: 0.7;
+}
+
+.twitter-icon:hover {
+  opacity: 1;
 }
 
 .instagram-icon {
@@ -264,4 +378,8 @@ footer {
   background-repeat: no-repeat;
   width: 2rem;
   height: 2rem;
+}
+
+.instagram-icon:hover {
+  opacity: 1;
 }
