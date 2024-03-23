@@ -64,6 +64,10 @@ header {
   @media screen and (max-width: 768px) {
     padding: 3.7rem 3.9rem;
   }
+
+  @media screen and (max-width: 375px) {
+    padding: 3.7rem 1.6rem;
+  }
 }
 
 .apply {
@@ -102,6 +106,10 @@ main {
   @media screen and (max-width: 768px) {
     padding-bottom: 20rem;
   }
+
+  @media screen and (max-width: 375px) {
+    padding: 2rem 1.6rem 18rem 1.6rem;
+  }
 }
 
 .header button {
@@ -118,6 +126,10 @@ main {
   @media screen and (max-width: 768px) {
     left: -25rem;
   }
+
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
 }
 
 .bg-pattern2 {
@@ -128,6 +140,10 @@ main {
   @media screen and (max-width: 768px) {
     right: -10rem;
   }
+
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
 }
 
 .hero-title {
@@ -137,6 +153,11 @@ main {
   @media screen and (max-width: 768px) {
     font-size: 6rem;
   }
+
+  @media screen and (max-width: 375px) {
+    font-size: 4.7rem;
+    line-height: 5rem;
+  }
 }
 
 .highlight {
@@ -144,6 +165,10 @@ main {
   text-decoration-color: var(--Eucaplyptus);
   text-decoration-thickness: 0.2rem;
   text-underline-offset: 1rem;
+
+  @media screen and (max-width: 768px) {
+    text-underline-offset: 0.6rem;
+  }
 }
 
 .learn-more {
@@ -157,8 +182,13 @@ main {
   z-index: 2;
 
   @media screen and (max-width: 768px) {
+    top: 50%;
     width: 48rem;
-    top: ;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 29.8rem;
+    top: 48%;
   }
 }
 
@@ -178,6 +208,10 @@ main {
     flex-direction: column;
     padding: 30rem 9.7rem 10rem 9.7rem;
   }
+
+  @media screen and (max-width: 375px) {
+    padding: 20rem 1.6rem 10rem 1.6rem;
+  }
 }
 
 .section-1:hover {
@@ -194,6 +228,11 @@ main {
     flex-direction: row;
     gap: 3.2em;
   }
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
 }
 
 .text-container {
@@ -205,6 +244,11 @@ main {
   @media screen and (max-width: 768px) {
     gap: 1.6rem;
     align-items: flex-start;
+  }
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -219,11 +263,12 @@ main {
   min-height: 5.6rem;
   border-radius: 50%;
   border: 0.1rem solid var(--Dark-Purple);
-  margin-bottom: 5.6rem;
+  gap: 5.6rem;
 
   @media screen and (max-width: 768px) {
     min-width: 4.7rem;
     min-height: 4.7rem;
+    gap: 3.2rem;
   }
 }
 
@@ -242,6 +287,9 @@ main {
   @media screen and (max-width: 768px) {
     font-size: 2.8rem;
   }
+  @media screen and (max-width: 375px) {
+    font-size: 2.8rem;
+  }
 }
 
 .introduction-description {
@@ -250,6 +298,11 @@ main {
   @media screen and (max-width: 768px) {
     text-align: left;
     font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    text-align: center;
+    line-height: 2.8rem;
   }
 }
 
@@ -266,6 +319,11 @@ main {
     min-width: 4.7rem;
     min-height: 4.7rem;
   }
+
+  @media screen and (max-width: 375px) {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 }
 
 .founder-image {
@@ -274,6 +332,10 @@ main {
 
   @media screen and (max-width: 768px) {
     width: 28.1rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin: 0 auto;
   }
 }
 
@@ -296,6 +358,16 @@ main {
     left: 15rem;
     top: 16rem;
   }
+
+  @media screen and (max-width: 375px) {
+    width: auto;
+    top: 20rem;
+    left: 0rem;
+    padding: 3.1rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    align-items: center;
+  }
 }
 
 .section2-content-title {
@@ -303,12 +375,18 @@ main {
   @media screen and (max-width: 768px) {
     font-size: 4.8rem;
   }
+  @media screen and (max-width: 375px) {
+    font-size: 3.2rem;
+  }
 }
 
 .section2-content-description {
   color: var(--White);
   @media screen and (max-width: 768px) {
     font-size: 1.6rem;
+  }
+  @media screen and (max-width: 375px) {
+    text-align: center;
   }
 }
 
@@ -327,6 +405,10 @@ main {
     right: 3rem;
     bottom: -8rem;
   }
+
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
 }
 
 /** footer **/
@@ -340,6 +422,10 @@ footer {
 
   @media screen and (max-width: 768px) {
     margin-top: 35rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin-top: 43rem;
   }
 }
 
